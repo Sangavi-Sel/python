@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = "praveenedward/pydjango"
+        IMAGE = "sangavi17/pydjango"
         TAG   = "v${BUILD_NUMBER}"
     }
 
@@ -53,7 +53,7 @@ pipeline {
             steps {
                 withCredentials([
                     usernamePassword(
-                        credentialsId: 'node-db',
+                        credentialsId: 'rds',
                         usernameVariable: 'DB_USER',
                         passwordVariable: 'DB_PASS'
                     ),

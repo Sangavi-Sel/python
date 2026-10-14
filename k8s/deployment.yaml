@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: pydjango
-          image: praveenedward/pydjango:v1
+          image: sangavi17/pydjango:v1
           envFrom:
             - configMapRef:
                 name: pydjango-config
